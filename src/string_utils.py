@@ -11,7 +11,7 @@ def is_palindrome(s: str) -> bool:
 
     Comparison is case-insensitive and ignores spaces.
     """
-    cleaned = s.replace(" ", "")
+    cleaned = s.replace(" ", "").lower()
     return cleaned == cleaned[::-1]
 
 
